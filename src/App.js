@@ -4,7 +4,7 @@ import Hello from './hello';
 class App extends Component {
   render() {
     return(
-      <Hello />
+      <Hello name="Taro" />
     );
   }
 }
