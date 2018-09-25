@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     const listData = ['foo', 'bar', 'baz'];
 
-    return(
+    return (
       <div>
         <Hello name="Taro" />
         <Profile name="Taro" age="20" love="Game" />
