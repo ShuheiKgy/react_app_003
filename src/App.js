@@ -11,8 +11,8 @@ class App extends Component {
     return (
       <div>
         <Hello name="Taro" />
-        <Profile name="Taro" age="20" love="Game" />
-        <Profile name="Hanako" age="10" love="Cats" />
+        <Profile name="Taro" age="20" height="170" weight="65" love="Game" />
+        <Profile name="Hanako" age="10" height="140" weight="35" love="Cats" />
         <List data={listData} />
         <Switch />
       </div>

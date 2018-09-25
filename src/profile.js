@@ -1,14 +1,42 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const Profile = (props) => {
+class Profile extends Component {
 
-    return (
-        <dl>
-            <dt>Name</dt><dd>{props.name}</dd>
-            <dt>Age</dt><dd>{props.age}</dd>
-            <dt>Love</dt><dd>{props.love}</dd>
-        </dl>
-    );
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: props.name,
+            data: {
+                height: props.height,
+                weight: props.weight
+            }
+        };
+    }
+
+    render() {
+        return (
+            <div>
+                <h1>{this.state.name}</h1>
+                <dl>
+                    <dt>HEIGHT</dt>
+                    <dd>{this.state.data.height}</dd>
+                    <dt>WEIGHT</dt>
+                    <dd>{this.state.data.weight}</dd>
+                </dl>
+            </div>
+        );
+    }
 }
+
+// const Profile = (props) => {
+//
+//     return (
+//         <dl>
+//             <dt>Name</dt><dd>{props.name}</dd>
+//             <dt>Age</dt><dd>{props.age}</dd>
+//             <dt>Love</dt><dd>{props.love}</dd>
+//         </dl>
+//     );
+// }
 
 export default Profile;
