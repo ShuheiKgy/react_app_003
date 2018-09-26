@@ -21,7 +21,7 @@ class Switch extends Component {
         return (
             <div>
                 <p>
-                    {this.state.power ? 'ON' : 'OFF' }
+                    { this.state.power ? 'ON' : 'OFF' }
                 </p>
                 <button onClick={this.handleClick}>SWITCH</button>
             </div>
