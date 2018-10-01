@@ -13,7 +13,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "babel": "babel src/index.js -o compiled.js",
-    "webpack": "webpack src/index.js public/bundle.js"
+    "webpack": "webpack"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
