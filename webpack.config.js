@@ -10,8 +10,14 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.txt$/,
-                use: 'raw-loader'
+                test: /\.js$/,
+                use: {
+                    loader: 'babel-loader',
+                    options:  {
+                        presets: ['env', 'react']
+                    }
+                },
+                exclude: /node_modules/
             }
         ]
     }
