@@ -1,5 +1,7 @@
 const path = require('path');
 
+const webpack = require('webpack');
+
 module.exports = {
     watch: true,
     entry: './src/index.js',
@@ -20,5 +22,8 @@ module.exports = {
                 exclude: /node_modules/
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin()
+    ]
 }
