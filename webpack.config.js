@@ -12,7 +12,8 @@ module.exports = {
     },
     devServer: {
         contentBase: path.join(__dirname, 'public'),
-        port: 9000
+        port: 9000,
+        hot: true
     },
     // module: {
     //     rules: [
@@ -35,6 +36,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Plugin generate page',
             template: 'src/root.html'
-        })
+        }),
+        new webpack.NamedModulesPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
     ]
 }
