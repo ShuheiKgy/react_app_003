@@ -5,6 +5,7 @@ const UserCard = (props) => {
         <div>
             <p>{props.name}</p>
             <p>{props.age}</p>
+            <button onClick={props.onClickFunction}>Click Me!</button>
         </div>
     );
 }
