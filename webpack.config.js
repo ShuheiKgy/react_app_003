@@ -1,13 +1,13 @@
 const path = require('path');
 
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     watch: true,
     entry: [
         'babel-polyfill',
-        'react-hot-loader/patch',
+        // 'react-hot-loader/patch',
         './src/index.js',
     ],
     output: {
@@ -17,8 +17,7 @@ module.exports = {
     },
     devServer: {
         contentBase: path.join(__dirname, 'public'),
-        port: 9000,
-        hot: true,
+        port: 9000
     },
     module: {
         rules: [

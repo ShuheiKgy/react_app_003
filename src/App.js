@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import SwitchFlag from './switchflag';
 import ViewFlagValue from './viewflagvalue';
+import InformationArea from './informationarea';
 
 class App extends Component {
   constructor() {
@@ -22,6 +23,7 @@ class App extends Component {
       <div>
         <SwitchFlag handleUpdateFlag={this.handleUpdateFlag} />
         <ViewFlagValue flag={this.state.flag} />
+        <InformationArea flag={this.state.flag} />
       </div>
     );
   }
