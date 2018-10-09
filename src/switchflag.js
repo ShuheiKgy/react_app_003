@@ -1,7 +1,7 @@
 import React from 'react';
 
-const SwitchFlag = () => {
-    return <button>Switch Flag</button>;
+const SwitchFlag = (props) => {
+    return <button onClick={props.handleUpdateFlag}>Switch Flag</button>;
 }
 
 export default SwitchFlag;
