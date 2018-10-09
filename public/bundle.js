@@ -3907,74 +3907,38 @@ eval("var g;\r\n\r\n// This works in non-strict mode\r\ng = (function() {\r\n\tr
 
 /***/ }),
 
-/***/ "./src/App.js":
+/***/ "./src/app.js":
 /*!********************!*\
-  !*** ./src/App.js ***!
+  !*** ./src/app.js ***!
   \********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _switchflag = __webpack_require__(/*! ./switchflag */ \"./src/switchflag.js\");\n\nvar _switchflag2 = _interopRequireDefault(_switchflag);\n\nvar _viewflagvalue = __webpack_require__(/*! ./viewflagvalue */ \"./src/viewflagvalue.js\");\n\nvar _viewflagvalue2 = _interopRequireDefault(_viewflagvalue);\n\nvar _informationarea = __webpack_require__(/*! ./informationarea */ \"./src/informationarea.js\");\n\nvar _informationarea2 = _interopRequireDefault(_informationarea);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar App = function (_Component) {\n  _inherits(App, _Component);\n\n  function App() {\n    _classCallCheck(this, App);\n\n    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));\n\n    _this.handleUpdateFlag = _this.handleUpdateFlag.bind(_this);\n    _this.state = {\n      flag: false\n    };\n    return _this;\n  }\n\n  _createClass(App, [{\n    key: 'handleUpdateFlag',\n    value: function handleUpdateFlag() {\n      this.setState({\n        flag: !this.state.flag\n      });\n    }\n  }, {\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        null,\n        _react2.default.createElement(_switchflag2.default, { handleUpdateFlag: this.handleUpdateFlag }),\n        _react2.default.createElement(_viewflagvalue2.default, { flag: this.state.flag }),\n        _react2.default.createElement(_informationarea2.default, { flag: this.state.flag })\n      );\n    }\n  }]);\n\n  return App;\n}(_react.Component);\n\nexports.default = App;\n\n//# sourceURL=webpack:///./src/App.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n  return _react2.default.createElement(\n    'div',\n    null,\n    'App'\n  );\n};\n\nexports.default = App;\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/browser.js":
+/*!************************!*\
+  !*** ./src/browser.js ***!
+  \************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _App = __webpack_require__(/*! ./App */ \"./src/App.js\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// import registerServiceWorker from './registerServiceWorker';\n// import Module from './module';\n\n// const root = document.querySelector('#root');\n// root.innerHTML = Module;\n\n_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));\n// registerServiceWorker();\n\n// import './index.css';\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/informationarea.js":
-/*!********************************!*\
-  !*** ./src/informationarea.js ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar InformationArea = function (_Component) {\n    _inherits(InformationArea, _Component);\n\n    function InformationArea() {\n        _classCallCheck(this, InformationArea);\n\n        var _this = _possibleConstructorReturn(this, (InformationArea.__proto__ || Object.getPrototypeOf(InformationArea)).call(this));\n\n        _this.handleOpenEverything = _this.handleOpenEverything.bind(_this);\n        _this.state = {\n            flag: false\n        };\n        return _this;\n    }\n\n    _createClass(InformationArea, [{\n        key: 'handleOpenEverything',\n        value: function handleOpenEverything() {\n            this.setState({\n                flag: !this.state.flag\n            });\n        }\n    }, {\n        key: 'render',\n        value: function render() {\n            return _react2.default.createElement(\n                'div',\n                null,\n                _react2.default.createElement(\n                    'p',\n                    null,\n                    '\\u96FB\\u8A71\\u756A\\u53F7 : ',\n                    _react2.default.createElement(\n                        'a',\n                        { href: 'tel:' + this.props.tel },\n                        this.props.tel\n                    )\n                ),\n                _react2.default.createElement(\n                    'p',\n                    null,\n                    '\\u30E1\\u30FC\\u30EB\\u30A2\\u30C9\\u30EC\\u30B9 : ',\n                    _react2.default.createElement(\n                        'a',\n                        { href: 'mailto:' + this.props.mail },\n                        this.props.mail\n                    )\n                ),\n                _react2.default.createElement(\n                    'button',\n                    { onClick: this.handleOpenEverything },\n                    '\\u3055\\u3089\\u306B\\u8A73\\u3057\\u3044\\u60C5\\u5831\\u3092\\u898B\\u308B'\n                ),\n                _react2.default.createElement(\n                    'div',\n                    { style: { display: this.state.flag ? 'block' : 'none' } },\n                    _react2.default.createElement(\n                        'p',\n                        null,\n                        '\\u6240\\u5C5E : ',\n                        _react2.default.createElement(\n                            'a',\n                            { href: this.props.organization },\n                            this.props.organization\n                        )\n                    ),\n                    _react2.default.createElement(\n                        'p',\n                        null,\n                        'SNS\\u30A2\\u30AB\\u30A6\\u30F3\\u30C8 : ',\n                        _react2.default.createElement(\n                            'a',\n                            { href: this.props.account },\n                            this.props.account\n                        )\n                    )\n                )\n            );\n        }\n    }]);\n\n    return InformationArea;\n}(_react.Component);\n\nexports.default = InformationArea;\n\n//# sourceURL=webpack:///./src/informationarea.js?");
-
-/***/ }),
-
-/***/ "./src/switchflag.js":
-/*!***************************!*\
-  !*** ./src/switchflag.js ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar SwitchFlag = function SwitchFlag(props) {\n    return _react2.default.createElement(\n        'button',\n        { onClick: props.handleUpdateFlag },\n        'Switch Flag'\n    );\n};\n\nexports.default = SwitchFlag;\n\n//# sourceURL=webpack:///./src/switchflag.js?");
-
-/***/ }),
-
-/***/ "./src/viewflagvalue.js":
-/*!******************************!*\
-  !*** ./src/viewflagvalue.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar ViewFlagValue = function ViewFlagValue(props) {\n    return _react2.default.createElement(\n        'p',\n        null,\n        props.flag ? '有効' : '無効'\n    );\n};\n\nexports.default = ViewFlagValue;\n\n//# sourceURL=webpack:///./src/viewflagvalue.js?");
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _app = __webpack_require__(/*! ./app */ \"./src/app.js\");\n\nvar _app2 = _interopRequireDefault(_app);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _reactDom.hydrate)(_react2.default.createElement(_app2.default, null), document.querySelector('#root'));\n\n//# sourceURL=webpack:///./src/browser.js?");
 
 /***/ }),
 
 /***/ 0:
-/*!*******************************************!*\
-  !*** multi babel-polyfill ./src/index.js ***!
-  \*******************************************/
+/*!*********************************************!*\
+  !*** multi babel-polyfill ./src/browser.js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! babel-polyfill */\"./node_modules/babel-polyfill/lib/index.js\");\nmodule.exports = __webpack_require__(/*! ./src/index.js */\"./src/index.js\");\n\n\n//# sourceURL=webpack:///multi_babel-polyfill_./src/index.js?");
+eval("__webpack_require__(/*! babel-polyfill */\"./node_modules/babel-polyfill/lib/index.js\");\nmodule.exports = __webpack_require__(/*! ./src/browser.js */\"./src/browser.js\");\n\n\n//# sourceURL=webpack:///multi_babel-polyfill_./src/browser.js?");
 
 /***/ })
 

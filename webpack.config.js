@@ -8,7 +8,8 @@ module.exports = {
     entry: [
         'babel-polyfill',
         // 'react-hot-loader/patch',
-        './src/index.js',
+        // './src/index.js',
+        './src/browser.js'
     ],
     output: {
         path: path.resolve(__dirname, 'public'),
@@ -26,7 +27,10 @@ module.exports = {
                 exclude: path.resolve(__dirname, 'node_modules'),
                 loader: 'babel-loader',
                 query: {
-                    presets: ['react', 'es2015']
+                    presets: [
+                        ['env', {modules: false}],
+                        'react', 'es2015'
+                    ]
                 }
             },
             {
