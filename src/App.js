@@ -3,6 +3,7 @@ import SwitchFlag from './switchflag';
 import ViewFlagValue from './viewflagvalue';
 import InformationArea from './informationarea';
 import FooComponent from './molecules/foocomponent';
+import SwitchErrorAlert from './molecules/switcherroralert';
 
 class App extends Component {
   constructor() {
@@ -26,6 +27,7 @@ class App extends Component {
         <ViewFlagValue flag={this.state.flag} />
         <InformationArea flag={this.state.flag} />
         <FooComponent />
+        <SwitchErrorAlert />
       </div>
     );
   }
