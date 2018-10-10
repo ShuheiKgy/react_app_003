@@ -3,6 +3,7 @@ import ReactDOMServer from 'react-dom/server';
 import express from 'express';
 import Html from './html';
 import App from './app';
+import Hello from './hello';
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.get('/', (req, res) => {
     ReactDOMServer.renderToNodeStream(
         <Html>
             <App />
+            <Hello />
         </Html>
     ).pipe(res);
 });

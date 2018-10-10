@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
+import styles from './hello.css';
 
 function Children1() {
-    return <p>1: Hello, world!</p>
+    return <p className={styles.hello}>1: Hello, world!</p>
 }
 
 const Children2 = () => {
